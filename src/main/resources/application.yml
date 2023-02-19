@@ -1,0 +1,15 @@
+server:
+  port: 3500
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  profiles:
+    active: dev
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
